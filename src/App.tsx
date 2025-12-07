@@ -10,8 +10,10 @@ import NotFound from "./pages/NotFound";
 import SuperAdminLogin from "./pages/admin/SuperAdminLogin";
 import AdminDashboard from "./pages/admin/Dashboard";
 import EventManagement from "./pages/admin/EventManagement";
+import EventDetail from "./pages/admin/EventDetail";
 import TableManagement from "./pages/admin/TableManagement";
 import LogoManagement from "./pages/admin/LogoManagement";
+import AdminManagement from "./pages/admin/AdminManagement";
 import EventPage from "./pages/event/EventPage";
 import CheckIn from "./pages/event/CheckIn";
 
@@ -30,8 +32,10 @@ const App = () => (
             <Route path="/admin/login" element={<SuperAdminLogin />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/admin/events" element={<EventManagement />} />
+            <Route path="/admin/events/:eventId" element={<EventDetail />} />
             <Route path="/admin/events/:eventId/tables" element={<TableManagement />} />
             <Route path="/admin/events/:eventId/logos" element={<LogoManagement />} />
+            <Route path="/admin/admins" element={<AdminManagement />} />
             <Route path="/event/:eventId" element={<EventPage />} />
             <Route path="/event/:eventId/checkin" element={<CheckIn />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

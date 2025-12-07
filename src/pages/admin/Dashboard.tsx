@@ -4,10 +4,10 @@ import { useAuth } from '@/hooks/useAuth';
 import { useEvents } from '@/hooks/useEvents';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Calendar, Users, Table2, Image, Plus, Settings } from 'lucide-react';
+import { Calendar, Users, Table2, Image, Plus, Settings, UserCog } from 'lucide-react';
 
 export default function AdminDashboard() {
-  const { user, profile, isAdmin, isLoading } = useAuth();
+  const { user, profile, isAdmin, isSuperAdmin, isLoading } = useAuth();
   const { data: events } = useEvents();
   const navigate = useNavigate();
 
@@ -138,6 +138,24 @@ export default function AdminDashboard() {
               </CardContent>
             </Card>
           </Link>
+
+          {isSuperAdmin && (
+            <Link to="/admin/admins">
+              <Card className="hover:shadow-lg hover:border-primary/50 transition-all cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <UserCog className="h-6 w-6 text-primary" />
+                    </div>
+                    Admin Management
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Create and manage administrator accounts. Super admin only.</p>
+                </CardContent>
+              </Card>
+            </Link>
+          )}
         </div>
 
         {activeEvents.length > 0 && (
