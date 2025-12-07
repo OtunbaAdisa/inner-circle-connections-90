@@ -64,7 +64,7 @@ export default function Auth() {
           <img 
             src={logo} 
             alt="Inner Circle" 
-            className="h-14 w-auto mb-2"
+            className="h-28 w-auto mb-2"
           />
         </div>
 
