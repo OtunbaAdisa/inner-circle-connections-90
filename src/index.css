@@ -8,44 +8,44 @@
 
 @layer base {
   :root {
-    /* Deep navy professional palette */
-    --background: 220 25% 97%;
-    --foreground: 222 47% 11%;
+    /* Inner Circle - Orange/Yellow Gradient Theme */
+    --background: 30 20% 98%;
+    --foreground: 25 30% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 25 30% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 25 30% 12%;
 
-    /* Navy primary */
-    --primary: 222 60% 22%;
-    --primary-foreground: 210 40% 98%;
+    /* Orange primary - from logo */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Light gray secondary */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 222 47% 11%;
+    /* Warm secondary */
+    --secondary: 35 30% 95%;
+    --secondary-foreground: 25 30% 12%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 35 20% 94%;
+    --muted-foreground: 25 15% 45%;
 
-    /* Gold accent for premium feel */
-    --accent: 45 93% 47%;
-    --accent-foreground: 222 47% 11%;
+    /* Yellow accent - from logo */
+    --accent: 45 100% 50%;
+    --accent-foreground: 25 30% 12%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 222 60% 22%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 95% 53%;
 
     --radius: 0.75rem;
 
-    /* Circle-specific colors */
-    --circle-outer: 220 60% 50%;
-    --circle-middle: 200 80% 45%;
-    --circle-inner: 45 93% 47%;
+    /* Circle-specific colors - orange gradient progression */
+    --circle-outer: 20 90% 45%;
+    --circle-middle: 30 95% 50%;
+    --circle-inner: 45 100% 50%;
     
     /* Success/Info states */
     --success: 142 76% 36%;
@@ -53,61 +53,61 @@
     --info: 200 80% 45%;
     --info-foreground: 0 0% 100%;
 
-    /* Sidebar */
-    --sidebar-background: 222 47% 11%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 45 93% 47%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 222 40% 18%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 222 40% 18%;
-    --sidebar-ring: 45 93% 47%;
+    /* Sidebar - dark warm theme */
+    --sidebar-background: 25 30% 10%;
+    --sidebar-foreground: 35 30% 95%;
+    --sidebar-primary: 35 100% 55%;
+    --sidebar-primary-foreground: 25 30% 10%;
+    --sidebar-accent: 25 25% 18%;
+    --sidebar-accent-foreground: 35 30% 95%;
+    --sidebar-border: 25 25% 18%;
+    --sidebar-ring: 35 100% 55%;
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    --background: 25 20% 6%;
+    --foreground: 35 30% 95%;
 
-    --card: 222 47% 9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 20% 9%;
+    --card-foreground: 35 30% 95%;
 
-    --popover: 222 47% 9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 20% 9%;
+    --popover-foreground: 35 30% 95%;
 
-    --primary: 45 93% 52%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 30 95% 55%;
+    --primary-foreground: 25 30% 10%;
 
-    --secondary: 222 40% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 20% 15%;
+    --secondary-foreground: 35 30% 95%;
 
-    --muted: 222 40% 15%;
-    --muted-foreground: 220 14% 60%;
+    --muted: 25 20% 15%;
+    --muted-foreground: 35 15% 60%;
 
-    --accent: 45 93% 52%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 25 30% 10%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 222 40% 18%;
-    --input: 222 40% 18%;
-    --ring: 45 93% 52%;
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 30 95% 55%;
 
-    --circle-outer: 220 60% 55%;
-    --circle-middle: 200 80% 50%;
-    --circle-inner: 45 93% 52%;
+    --circle-outer: 20 90% 50%;
+    --circle-middle: 30 95% 55%;
+    --circle-inner: 45 100% 55%;
 
     --success: 142 76% 42%;
     --info: 200 80% 50%;
 
-    --sidebar-background: 222 47% 6%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 45 93% 52%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 222 40% 12%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 222 40% 12%;
-    --sidebar-ring: 45 93% 52%;
+    --sidebar-background: 25 20% 6%;
+    --sidebar-foreground: 35 30% 95%;
+    --sidebar-primary: 35 100% 55%;
+    --sidebar-primary-foreground: 25 30% 10%;
+    --sidebar-accent: 25 20% 12%;
+    --sidebar-accent-foreground: 35 30% 95%;
+    --sidebar-border: 25 20% 12%;
+    --sidebar-ring: 35 100% 55%;
   }
 }
 
